@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>{%block title %} {% endblock %}</title>
+    <style>
+        nav {
+            padding: 10px;
+            margin: 5px;
+            background-size:contain;
+            background-color:rgb(124, 182, 209);
+            background-image: url(https://flxt.tmsimg.com/assets/p14287787_b1t_h8_aa.jpg);
+            background-blend-mode: soft-light;
+        }
+        nav h1 {
+            color: #0f0825;
+            font-size: 3em;
+            margin-left: 50px;
+            font-family: 'Trebuchet MS', 'Lucidia Sans Unicode', 'Lucidia Grande', 'Lucidia Sans', Arial, sans-serif;
+            text-decoration: none;
+            margin-top: 380px;
+        }
+        nav a {
+            color:#0f0825;
+            padding: 3px;
+            padding-bottom: 5px;
+            font-size: 1.5em;
+            margin-top: 5px;
+            margin-left: 50px;
+            font-family: 'Trebuchet MS', 'Lucidia Sans Unicode', 'Lucidia Grande', 'Lucidia Sans', Arial, sans-serif;
+        }
+        .content {
+            margin-left: 35px;
+            font-family: Arial, sans-serif;
+            font-size: 1.2em;
+            line-height: 1.5;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>#B99: Brooklyn99 Sentiment Analysis of Scripts and Twitter</h1>
+        <a href="/">Home</a>
+        <a href="/overview">Analysis Summary</a>
+        <a href="/scripts">Script Analysis</a>
+        <a href="/tweets">Tweet Analysis</a>
+    </nav>
+    <hr>
+    <div class = "content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>

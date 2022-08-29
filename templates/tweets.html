@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+    }
+</style>
+{% block content %}
+    <div class = 'content'>
+        <h2>Twitter Analysis</h2>
+        <h3>Which of the following would you like to explore in more depth?</h3>
+        <form method = "post" action = "/tweets">
+            <input type = "submit" value="Most Common Words" name="commonWordsTwitter" style="height:25px; width:200px; padding: 20px; margin-left:15px; text-align: center; line-height:20px;"/>
+            <input type = "submit" value="Unique Words" name="uniqueWords" style="height:25px; width:200px; padding: 20px; margin-left:50px; text-align: center; line-height:20px;"/>
+            <input type = "submit" value="WordClouds" name="wordClouds" style="height:25px; width:200px; padding: 20px; margin-left:50px; text-align: center; line-height:20px;"/>
+        </form>
+    </div>
+{% endblock %}

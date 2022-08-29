@@ -1,0 +1,81 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <style>
+        h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+    }
+    </style>
+    <div class = 'content'>
+        <h2>Welcome to the #B99 Sentiment Project!</h2>
+        <p>Analysis of #B99 tweets and the scripts of seasons 1 through 4 can be found through the navigation bar.</p>
+
+        <h3>What is Brooklyn 99?</h3>
+        <p>Quote from the B99 imdb page: 
+            "Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.
+        
+            Captain Ray Holt takes over Brooklyn's 99th precinct, which includes Detective Jake Peralta, a talented but carefree detective who's used to doing whatever he wants. The other employees of the 99th precinct include Detective Amy Santiago, Jake's over achieving and competitive partner; Detective Rosa Diaz, a tough and kept to herself coworker; Detective Charles Boyle, Jake's best friend who also has crush on Rosa; Detective Sergeant Terry Jeffords, who was recently taken off the field after the birth of his twin girls; and Gina Linetti, the precinct's sarcastic administrator." 
+        </p>
+
+        <h3>B99: Who's Who?</h3>
+
+        <div class="row">
+            <div class="column">
+                <h4>Jake Peralta</h4>
+        
+                <img src="/static/jake.PNG" style="float: right"; padding:5px;>
+                <p>
+                    Jacob "Jake" Jeffrey Peralta (born June 1981; played by Andy Samberg) is the main protagonist of the show. He was a cocky and immature but talented NYPD detective stationed in Brooklyn's 99th Precinct, and is currently a stay-at-home father to his son Mac.  
+                </p>
+            </div>
+
+            <div class="column">
+                <h4>Amy</h4>
+                <img src="/static/amy.PNG"style="float: right"; padding:5px;>
+                <p>
+                    Chief Amy Santiago (born 1982/1983) is a main character of the show. She is a Chief of Department, former sergeant and a former detective at the 99th precinct of the NYPD. Always eager to impress, Amy is looking for a mentor to help her achieve her dream of being the youngest person to be promoted to Captain. 
+                </p>
+            </div>
+            
+
+            <div class="column">
+                <h4>Cpt. Holt</h4>
+                <img src="/static/holt.PNG"style="float: right"; padding:5px;>
+                <p>
+                    Deputy Commissioner Raymond Jacob Holt is one of the main characters of the show. He was the Captain of the 99th Precinct and was formerly a uniformed officer. Outwardly he is strict, hardworking, stoic, staunchly professional, and a stickler for the rules. Inwardly, he is a warm, empathetic, devoted, and kind-hearted man who cares deeply about the officers and employees under his command and frequently participates in office antics, competitions, and pranks. Though he is often lampooned by his colleagues for his lack of displaying emotion or facial expressions, he is held in the highest regard by them and has developed close relationships with most of them. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h4>Gina</h4>
+                <img src="/static/gina.PNG"style="float: right"; padding:5px;>
+                <p>
+                    Regina "Gina" Linetti is a main character of the show. She was the 99th Precinct's sardonic civilian administrator. At the end of season two, she left The 99th Precinct to join Captain Raymond Holt, working at the NYPD's public relations office. She returned to her old post at the end of The Oolong Slayer. At the end of the season 6 episode, The Tattler, she decided to quit working at the 99. She made her last regular appearance in the fourth episode of season 6, Four Movements.
+                </p>
+            </div>
+        </div>
+
+        <h5>Sources: </h5>
+        <p>
+            https://www.imdb.com/title/tt2467372/plotsummary
+            https://brooklyn99.fandom.com/wiki/Jake_Peralta
+
+        </p>
+    </div>
+    
+{% endblock %}

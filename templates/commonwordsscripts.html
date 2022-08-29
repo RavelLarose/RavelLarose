@@ -1,0 +1,80 @@
+{% extends 'scripts.html' %}
+{% block content %}
+
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 47%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+        max-width:800px;
+    }
+</style>
+
+    <div class = 'moreContent'>
+        <h2>Lines by Character</h2>
+        <div class="row">
+            <div class="column">
+                <img src = "/static/Script Lines.PNG">
+                <p> Characters's number of spoken lines as in the scripts for seasons 1 - 4. Jake has by far the most spoken lines, showing that he's the main character; Amy has the second most, likely ating as the show's deuteragonist and love interest; the other supporting/main characters have roughly the same number of speaking lines.</p>
+            </div>
+            <div class="column">
+                <img src = "/static/Script Average Lines.PNG">
+                <p>Averaging all of the character's lines together, we can see how long each character's 'line' tends to be. Interestingly, Gina has markedly longer lines than many of the others and a higher ratio of line length : line amount. This may show that she doesn't appear in many episodes, but talks more when she does appear.</p>
+            </div>
+        </div>
+
+        <h2>Common Words by Character</h2>
+        <div class="row">
+            <h3>Jake Peralta:</h3>
+            <div class="column">
+                <img src = "/static/Jake Common Words.PNG">
+            </div>
+            <div class="column">
+                <p>Jake's most common words. By inspecting them, we can see that he appears to be a very laid-back character, using many relaxed or unprofessional words.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Amy Santiago:</h3>
+            <div class="column">
+                <img src = "/static/Amy Common Words.PNG">
+            </div>
+            <div class="column">
+                <p>Amy's most common words. We can see that one of her most commonly spoken words is Jake's name, which further cements her as a love interest in the story.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Gina Linetti</h3>
+            <div class="column">
+                <img src = "/static/Gina Common Words.PNG">
+            </div>
+            <div class="column">
+                <p>Gina's most common words. From what she says most often, we can see that she's most often speaking to either the main character Jake, or a different character named Charles.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Cpt. Ray Holt</h3>
+            <div class="column">
+                <img src = "/static/Holt Common Words.PNG">
+            </div>
+            <div class="column">
+                <p>Holt is the only character to refer to Jake by his last name, Peralta. This tells us that this character is likely of higher status than Jake is in the show, perhaps acting as a boss in the police office that the show is set it. This is solidified by how Holt is often referred to as "Captain" in the script by other characters.</p>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

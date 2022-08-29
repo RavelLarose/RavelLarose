@@ -1,0 +1,48 @@
+{% extends 'tweets.html' %}
+{% block content %}
+
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+    }
+</style>
+
+    <div class = 'moreContent'>
+        <h2>Twitter WordClouds</h2>
+
+        <div class="row">
+            <h3>Positive Wordcloud</h3>
+            <div class="column">
+                <img src = "/static/Twitter Positive wordcloud.PNG">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Neutral Wordcloud</h3>
+            <div class="column">
+                <img src = "/static/Twitter Neutral Wordcloud.PNG">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Negative Wordcloud</h3>
+            <div class="column">
+                <img src = "/static/Twitter negative wordcloud.PNG">
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

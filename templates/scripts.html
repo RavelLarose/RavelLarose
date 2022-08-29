@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+</style>
+{% block content %}
+    <div class = 'content'>
+        <h2>Script Analysis</h2>
+        <h3>What would you like to explore in more depth?</h3>
+    </div>
+    <form method = "post" action = "/scripts">
+        <input type = "submit" value="Character's Common Words" name="commonWords" style="height:25px; width:200px; padding: 20px; margin-left:50px; text-align: center; line-height:20px;"/>
+        <input type = "submit" value="Script Sentiment" name="lineSentiment" style="height:25px; width:200px; padding: 20px; margin-left:50px; text-align: center; line-height:20px;"/>
+    </form>
+    <div class = 'moreContent'> 
+        {% block moreContent %} {% endblock %}
+    </div>
+{% endblock %}

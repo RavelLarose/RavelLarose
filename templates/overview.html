@@ -1,0 +1,77 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<style>
+    h3{
+    color: #0f0825;
+}
+.column1{
+    float: left;
+    width: 45%;
+    padding: 10px;
+}
+.row1::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+.column2{
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+.row2::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+img{
+    float: left;
+}
+</style>
+
+<div class = 'content'>
+    <h2>Analysis Summary</h2>
+    <p>The analysis completed in this project focuses mainly on the sentiment analysis of the characters in the show Brooklyn99 (specifically Jake, Gina and Holt) and the corresponding analysis of tweets about the show.</p>
+
+    <h3>Character & Script Sentiments</h3>
+    <div class="row1">
+        <div class="column1">
+            <img src = "/static/Script Sentiment Total.PNG" style="max-width:300px;">
+            <p>The script is shown to have an overall pattern of 3 neutral : 2 positive : 1 negative sentiment. This is about to be expected, as the data comes from a comedy show; we would expect jokes to have either a neutral or positive sentiment, with negative sentiments being sparse. Almost all of the characters in the show follow this pattern.</p>
+        </div>
+        <div class="column1">
+            <img src = "/static/Script Sentiment.PNG" style="max-width:600px;">
+            <p>The only outlier to this pattern is Jake, who is the main protagonist of the show. Because of this fact, we would expect him to be speaking the most out of anyone, but we also see that he has a disproportionate amount of positive lines when compared to the rest of the script. This is likely reflective of the script writing Jake to be a positive character, making him easily likeable and relatable.</p>
+        </div>
+    </div>
+    
+    <h3>Tweet Sentiment</h3>
+    <div class="row2">
+        <div class="column2">
+            <img src = "/static/Twitter Common Positive Words.PNG">
+            <p>The theme of Jake being a likeable protagonist continues as we inspect the tweets made about the show as seasons 1 - 4 were airing. By looking at the most common words used in positive tweets, we can see that Jake's name is near the top of the list - an indication of popularity. Other characters also appear close to the top, particularly Amy, the series's dueteragonist.</p>
+        </div>
+        <div class="column2">
+            <img src = "/static/Twitter Common Negative Words.PNG">
+            <p>It's noteworthy that Jake's name also tops the list of words in negative tweets. This may hint that the show made some controversial choices regarding his character, particularly in regards to his relationship with the character Amy Santiago. We know this because word 'Peraltiago' appears near the top of the negative words list - this appears to be a portmanteu of 'Peralta' and 'Santiago', referring to the two character's relationship. It's interesting that while these two characters are individually popular, their relationship seems controversial.</p>
+        </div>
+        <div class="column2">
+            <img src = "/static/Twitter Common Neutral Words.PNG">
+            <p>An interesting note seen in the neutral tweets is that the words 'episode', 'watched', and 'tvttime' are repeated more than any others. This follows the structure of a type of mass-generated tweet: "I just watched episode ## of Brooklyn Nine-Nine!", which appears to be built into the platform that many people view the show on.</p>
+        </div>
+    </div>
+
+    <h3>Conclusions</h3>
+    <p>All in all, we can state that the show's protagonist Jake is the most well-liked character in the show, with his apparent love interest Amy being much less well liked, and other characters like Holt and Gina being relatively uncontroversial and therefore not tweeted about as much.</p>
+
+
+
+    
+   
+
+
+</div>
+
+{% endblock %}

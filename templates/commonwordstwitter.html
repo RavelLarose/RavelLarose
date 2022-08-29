@@ -1,0 +1,64 @@
+{% extends 'tweets.html' %}
+{% block content %}
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+    }
+</style>
+    <div class = 'moreContent'>
+        <h2>Twitter's Most Common Words by Sentiment</h2>
+        
+        <div class="row">
+            <h3>Positive Words:</h3>
+            <div class="column">
+                <h5>Table</h5>
+                <img src = "/static/Twitter Common Positive Words.PNG">
+            </div>
+
+            <div class="column">
+                <h5>Bar Chart</h5>
+                <img src = "/static/Twitter positive words 2.PNG">
+            </div>
+
+        </div>
+
+        <div class="row"> 
+            <h3>Neutral Words</h3>
+            <div class="column">
+                <h5>Table</h5>
+                <img src = "/static/Twitter Common Neutral Words.PNG">
+            </div>
+
+            <div class="column">
+                <h5>Bar Chart</h5>
+                <img src = "/static/Twitter neutral words 2.PNG">
+            </div>
+        </div>
+
+        <div class="row"> 
+            <h3>Negative Words</h3>
+            <div class="column">
+                <h5>Table</h5>
+                <img src = "/static/Twitter Common Negative Words.PNG">
+            </div>
+
+            <div class="column">
+                <h5>Bar Chart</h5>
+                <img src = "/static/Common Twitter Words 2.PNG">
+            </div>
+        </div>
+    </div>
+{% endblock %}

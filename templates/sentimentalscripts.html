@@ -1,0 +1,50 @@
+{% extends 'scripts.html' %}
+{% block content %}
+
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+    }
+</style>
+
+    <div class = 'moreContent'>
+        <h2>Sentiments of the Script</h2>
+
+        <div class="row">
+            <h3>Sentiments of Lines in Total</h3>
+            <div class="column">
+                <p>Lines from the scripts are sorted into either positive, negative, or neutral. The script has roughly a 1 negative : 2 positive : 3 neutral ratio for its speaking lines.</p>
+                <img src = "/static/Script Sentiment Total.PNG">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Sentiment of Lines by Character</h3>
+            <div class="column">
+                <p>Generally, characters keep the same ratio of positive : negative : neutral sentiment in their lines - except, interestingly, the main character Jake. Jake has many more positive sentiments than anyone else.</p>
+                <img src = "/static/Script Sentiment.PNG", style="max-width:800px;">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Unique Positive Words in the Script</h3>
+            <div class="column">
+                <img src = "/static/Unique Positive Script Lines.PNG", style="width:800px;">
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

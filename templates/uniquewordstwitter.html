@@ -1,0 +1,45 @@
+{% extends 'tweets.html' %}
+{% block content %}
+
+<style>
+    h3{
+        color: #0f0825;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    .row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    img{
+        float: left;
+    }
+</style>
+
+    <div class = 'moreContent'>
+        <h2>Twitter's Unique Words by Sentiment</h2>
+
+        <div class="row">
+            <div class="column">
+                <h3>Positive Words:</h3>
+                <img src = "/static/Twitter Unique Positive Words.PNG">
+            </div>
+
+            <div class="column">
+                <h3>Neutral Words</h3>
+                <img src = "/static/Twitter Unique Neutral Words.PNG">
+            </div>
+
+            <div class="column">
+                <h3>Negative Words</h3>
+                <img src = "/static/Twitter Unique Negative Words.PNG">
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
